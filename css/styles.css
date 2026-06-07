@@ -150,3 +150,21 @@ input:focus, textarea:focus { outline: 2px solid rgba(0, 212, 255, 0.4); }
   .founders-grid { grid-template-columns: 1fr; }
 }
 
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.brand-logo {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.brand span {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+}
