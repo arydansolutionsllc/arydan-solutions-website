@@ -107,3 +107,46 @@ input:focus, textarea:focus { outline: 2px solid rgba(0, 212, 255, 0.4); }
   .section { padding: 64px 0; }
   .hero-card { transform: none; }
 }
+
+
+ /* Founders page layout */
+ .founders-grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1.5rem;
+   margin-top: 1.5rem;
+ }
+ .founder-card {
+   background: var(--card-bg, #fff);
+   border-radius: 8px;
+   padding: 1.25rem;
+   text-align: center;
+   box-shadow: var(--card-shadow, 0 1px 4px rgba(0,0,0,0.06));
+ }
+ .founder-card .avatar {
+   width: 96px;
+   height: 96px;
+   object-fit: cover;
+   border-radius: 50%;
+   display: block;
+   margin: 0 auto 0.75rem;
+ }
+ .founder-card .role {
+   color: var(--muted, #666);
+   font-size: 0.95rem;
+   margin: 0.25rem 0 0.5rem;
+ }
+ .founder-card .bio {
+   font-size: 0.95rem;
+   color: var(--text, #333);
+   margin: 0;
+ }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .founders-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .founders-grid { grid-template-columns: 1fr; }
+}
+
