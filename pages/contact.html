@@ -17,16 +17,54 @@
     <section class="container section contact-grid">
       <div class="content-panel">
         <h2>Start a conversation</h2>
-        <p><strong>Email:</strong> contact@arydansolutions.com</p>
+        <p><strong>Email:</strong> arydansolutionsllc@gmail.com</p>
         <p><strong>Location:</strong> Virginia, USA</p>
         <p><strong>Focus:</strong> AI software, automation, machine learning, and AI consulting.</p>
       </div>
-      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <label>Name<input type="text" name="name" placeholder="Your name" required></label>
-        <label>Email<input type="email" name="email" placeholder="you@example.com" required></label>
-        <label>Message<textarea name="message" rows="5" placeholder="Tell us about your project" required></textarea></label>
-        <button class="btn btn-primary" type="submit">Send Message</button>
-      </form>
+      <form class="contact-form"
+      action="https://formsubmit.co/arydansolutionsllc@gmail.com"
+      method="POST">
+
+    <!-- FormSubmit Settings -->
+    <input type="hidden" name="_subject" value="New Arydan Solutions Contact Form Submission">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <label>
+        Name
+        <input type="text"
+               name="name"
+               placeholder="Your name"
+               required>
+    </label>
+
+    <label>
+        Email
+        <input type="email"
+               name="email"
+               placeholder="you@example.com"
+               required>
+    </label>
+
+    <label>
+        Company
+        <input type="text"
+               name="company"
+               placeholder="Company name (optional)">
+    </label>
+
+    <label>
+        Message
+        <textarea name="message"
+                  rows="5"
+                  placeholder="Tell us about your project"
+                  required></textarea>
+    </label>
+
+    <button class="btn btn-primary" type="submit">
+        Send Message
+    </button>
+</form>
     </section>
   </main>
   <footer class="site-footer"><div class="container footer-grid"><p>© <span id="year"></span> Arydan Solutions LLC.</p><div><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></div></div></footer>
